@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Date – Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="video/wedding.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+    <h1>Save the Date</h1>
+    <h2>Emma & Lucas</h2>
+    <p class="date">June 14, 2026 – Tuscany, Italy</p>
+    <button onclick="scrollToDetails()">More Details</button>
+</div>
+
+<section id="details">
+    <h2>We're Getting Married!</h2>
+    <p>We can’t wait to celebrate this special moment with our closest family and friends.</p>
+
+    <h3>📍 Location</h3>
+    <p>Villa Medici, Tuscany, Italy</p>
+
+    <h3>📅 Schedule</h3>
+    <ul>
+        <li>Ceremony – 4:00 PM</li>
+        <li>Reception – 6:30 PM</li>
+    </ul>
+
+    <h3>💌 RSVP</h3>
+    <p>Formal invitation & RSVP details to follow.</p>
+</section>
+
+<script>
+function scrollToDetails() {
+    document.getElementById("details").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
